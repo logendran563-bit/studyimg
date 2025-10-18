@@ -32,6 +32,16 @@
             overflow-y: auto;
         }
 
+        .login-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        form {
+            width: 100%;
+        }
+
         .logo {
             text-align: center;
             margin-bottom: 30px;
@@ -50,6 +60,7 @@
 
         .form-group {
             margin-bottom: 20px;
+            width: 100%;
         }
 
         .form-group label {
@@ -96,7 +107,9 @@
             background: #f8f9fa;
             border-radius: 10px;
             border-left: 4px solid #667eea;
-            margin-top: 10px;
+            margin-top: 25px;
+            width: 100%;
+            clear: both;
         }
 
         .study-content h2 {
@@ -222,27 +235,29 @@
             <p>Web Development Learning Portal</p>
         </div>
 
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="username">Student Username</label>
-                <input type="text" id="username" placeholder="Enter your username" required autocomplete="off">
+        <div class="login-wrapper">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Student Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="password">Access Code</label>
+                    <input type="password" id="password" placeholder="Enter your access code" required autocomplete="off">
+                </div>
+                <button type="submit" class="login-btn">Access Learning Materials</button>
+                <div class="error" id="errorMsg">Invalid credentials. Please try again.</div>
+            </form>
+            
+            <div class="study-content">
+                <h2>Introduction to Web Development</h2>
+                <p>
+                    Web development is the process of building and maintaining websites and web applications. It encompasses everything from creating simple static pages to complex web-based applications, social network services, and electronic businesses. Modern web development involves front-end technologies like HTML, CSS, and JavaScript, which create the visual interface users interact with, along with back-end systems that handle data processing and server-side logic.
+                </p>
+                <p>
+                    Learning web development opens doors to endless possibilities in today's digital world. Whether you're building responsive websites, interactive web applications, or e-commerce platforms, mastering the fundamentals of web technologies empowers you to bring creative ideas to life. The field constantly evolves with new frameworks, libraries, and best practices, making it an exciting and rewarding career path for aspiring developers who are passionate about creating meaningful digital experiences.
+                </p>
             </div>
-            <div class="form-group">
-                <label for="password">Access Code</label>
-                <input type="password" id="password" placeholder="Enter your access code" required autocomplete="off">
-            </div>
-            <button type="submit" class="login-btn">Access Learning Materials</button>
-            <div class="error" id="errorMsg">Invalid credentials. Please try again.</div>
-        </form>
-        
-        <div class="study-content">
-            <h2>Introduction to Web Development</h2>
-            <p>
-                Web development is the process of building and maintaining websites and web applications. It encompasses everything from creating simple static pages to complex web-based applications, social network services, and electronic businesses. Modern web development involves front-end technologies like HTML, CSS, and JavaScript, which create the visual interface users interact with, along with back-end systems that handle data processing and server-side logic.
-            </p>
-            <p>
-                Learning web development opens doors to endless possibilities in today's digital world. Whether you're building responsive websites, interactive web applications, or e-commerce platforms, mastering the fundamentals of web technologies empowers you to bring creative ideas to life. The field constantly evolves with new frameworks, libraries, and best practices, making it an exciting and rewarding career path for aspiring developers who are passionate about creating meaningful digital experiences.
-            </p>
         </div>
     </div>
 
